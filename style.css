@@ -27,7 +27,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 header {
@@ -54,7 +54,7 @@ header ul li {
   margin: 0 20px;
 }
 
-header ul li:last-child a {
+header ul li.contact > a {
   background: rgb(17, 255, 17);
   color: #fff;
   padding: 5px 10px;
@@ -69,9 +69,107 @@ header ul li a {
   transition: 0.3s ease;
 }
 
-header ul li a:hover {
+header li a:hover {
   background: rgb(17, 255, 17);
   color: #fff;
+}
+
+header ul li.about a:hover {
+  background: transparent;
+  color: rgb(17, 255, 17);
+}
+
+header ul li.about ul {
+  position: absolute;
+  left: 0;
+  width: 130px;
+  background: rgb(17, 255, 17);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+header ul li.about ul li {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header ul li.about ul li a {
+  padding: 0;
+  border-radius: 0;
+}
+
+header ul li.about ul li:hover {
+  background: #fff;
+}
+
+header ul li.about ul li:hover > a {
+  color: rgb(17, 255, 17);
+  background: transparent;
+}
+
+header ul li.about:hover ul {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+header ul li.about ul li.about3 ul {
+  position: absolute;
+  left: 100%;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+header ul li.about ul li.about3:hover ul {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+header ul li.features a:hover {
+  background: transparent;
+  color: rgb(17, 255, 17);
+}
+
+header ul li.features ul {
+  position: absolute;
+  left: 0;
+  width: 130px;
+  background: rgb(17, 255, 17);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+
+header ul li.features ul li {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header ul li.features ul li a {
+  border-radius: 0;
+  padding: 0;
+}
+
+header ul li.features:hover ul {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+header ul li.features ul li:hover {
+  background: #fff;
 }
 
 .hero {
@@ -94,7 +192,7 @@ header ul li a:hover {
 }
 
 .hero p {
-  max-width: 700px;
+  max-width: 800px;
   width: 100%;
   margin: 30px auto;
   line-height: 1.7em;
@@ -112,8 +210,13 @@ header ul li a:hover {
   align-items: center;
   gap: 0.5em;
   margin: 0 auto;
+  transition: transform 0.5s ease;
 }
 
 .hero button ion-icon {
   font-size: 1.5em;
+}
+
+.hero button:hover {
+  transform: scale(1.2);
 }
