@@ -1,8 +1,8 @@
-🌐 ##Hero Section with Dropdown Navigation
+🌐 # Hero Section with Dropdown Navigation
 
 Welcome to a Simple Website with Dropdown Navigation project! 🚀 This repository contains a simple yet elegant website featuring a modern hero section paired with a smooth, responsive dropdown navigation bar.
 
-📋 ##Features
+📋 ## Features
 
 Dropdown Navigation: Easy-to-use menu with smooth animations.
 
@@ -10,13 +10,13 @@ Clean UI: Minimalistic and visually appealing layout.
 
 Customizable: Simple code structure for easy modifications.
 
-🛠️ ##Technologies Used
+🛠️ ## Technologies Used
 
 HTML5
 
 CSS3 (for styling and responsiveness)
 
-💡 ##How to Use
+💡 ## How to Use
 
 Clone the Repository:
 
@@ -28,7 +28,7 @@ cd website-1
 
 Open the `` File:Simply open the file in your preferred browser.
 
-🚀 ##Deployment
+🚀 ## Deployment
 
 You can deploy this project using:
 
@@ -38,7 +38,7 @@ Netlify
 
 Vercel
 
-🙌 ##Contributing
+🙌 ## Contributing
 
 Contributions are welcome! Feel free to fork the repository, make changes, and submit a pull request.
 
